@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/rose"
+    tools:context=".ResultMain">
+    <?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        tools:context=".ResultActivity">
+
+        <TextView
+            android:id="@+id/nomeAlunoTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nome do Aluno:"
+            android:textSize="18sp"
+            android:layout_marginTop="16dp"/>
+
+        <TextView
+            android:id="@+id/nota1TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nota N1:"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:layout_below="@id/nomeAlunoTextView"
+            android:layout_marginTop="16dp"/>
+
+        <TextView
+            android:id="@+id/nota2TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nota N2:"
+            android:textSize="18sp"
+            android:layout_below="@id/nota1TextView"
+            android:layout_marginTop="16dp"/>
+
+        <TextView
+            android:id="@+id/nota3TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nota N3:"
+            android:textSize="18sp"
+            android:layout_below="@id/nota2TextView"
+            android:layout_marginTop="16dp"/>
+
+        <Button
+            android:id="@+id/voltarButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Voltar"
+            android:layout_below="@id/nota3TextView"
+            android:layout_marginTop="24dp"/>
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
